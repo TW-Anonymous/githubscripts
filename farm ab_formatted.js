@@ -36,9 +36,9 @@
             gotoNextPage();
         } else {
             if (!isLocked(buttonA)) {
-                // buttonA.click();
+                buttonA.click();
             } else if (!isLocked(buttonB)) {
-                // buttonB.click();
+                buttonB.click();
             }
             index++;
         }
