@@ -28,8 +28,6 @@
             buttonB = farmRunB[index];
         var rows = document.getElementById('plunder_list').getElementsByTagName('tr').length - 1;
 
-        console.log(buttonA);
-
         if (isLocked(buttonA) && isLocked(buttonB)) {
             switchVillage();
         } else if (index >= rows && (!isLocked(buttonA) || !isLocked(buttonB))){
