@@ -46,4 +46,4 @@
 
     index = 1;
     timer = setInterval (send, 210);
-})();
+})();//to make it update
