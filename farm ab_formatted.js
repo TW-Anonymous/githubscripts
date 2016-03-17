@@ -18,7 +18,8 @@
         var player = window.game_data.player.id;
         var sitter = window.location.href.match(/t\=\d+/i);
         clearInterval(timer);
-        window.location = "game.php?village=n" + window.game_data.village.id + "&screen=" + window.game_data.screen + "&t='search_for'" + player + (sitter ? ("&" + sitter) : "")
+        window.location = "game.php?village=n" + window.game_data.village.id + "&screen=" + window.game_data.screen + "&t='search_for'" + player + (sitter ? ("&" + sitter) : "") + "&Farm_page=0"
+
     }
 
     function send() {
@@ -44,5 +45,5 @@
 
 
     index = 1;
-    timer = setInterval (send, 206);
+    timer = setInterval (send, 210);
 })();
